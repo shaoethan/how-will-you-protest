@@ -4,7 +4,7 @@ def typingPrint(text):
   for character in text:
     sys.stdout.write(character)
     sys.stdout.flush()
-    time.sleep(0.05)
+    time.sleep(0.07)
   print()
   
 def typingInput(text):
@@ -16,26 +16,44 @@ def typingInput(text):
   return value  
   
 def clearScreen():
+  typingPrint("Clear screen...")
   os.system("clear")
 
 '''
 █▀ █▀▀ █▀▀ █▄░█ █▀▀   ▄█ ▀   █ █▄░█ ▀█▀ █▀█ █▀█ █▀▄ █░█ █▀▀ ▀█▀ █ █▀█ █▄░█
 ▄█ █▄▄ ██▄ █░▀█ ██▄   ░█ ▄   █ █░▀█ ░█░ █▀▄ █▄█ █▄▀ █▄█ █▄▄ ░█░ █ █▄█ █░▀█
 '''
+print(" /   |   \  ______  _  __ __  _  _|__|  | |  |    ___.__. ____  __ __ ")
+print("/    ~    \/  _ \ \/ \/ / \ \/ \/ /  |  | |  |   <   |  |/  _ \|  |  \ ")
+print("\    Y    (  <_> )     /   \     /|  |  |_|  |__  \___  (  <_> )  |  /")
+print(" \___|_  / \____/ \/\_/     \/\_/ |__|____/____/  / ____|\____/|____/ ")
+print("       \/                                         \/                  ")
+print("                     __                   __ _________ ")
+print("_____________  _____/  |_  ____   _______/  |\_____   \ ")
+print("\____ \_  __ \/  _ \   __\/ __ \ /  ___/\   __\ /   __/")
+print("|  |_> >  | \(  <_> )  | \  ___/ \___ \  |  |  |   |   ")
+print("|   __/|__|   \____/|__|  \___  >____  > |__|  |___|   ")
+print("|__|                          \/     \/        <___> ")
 
-print("")
-
-
-print()
-typingPrint("Created by Ethan Shao")
-print()
+typingPrint("\n\n\nCreated by Ethan Shao")
 
 time.sleep(1)
 typingPrint("Welcome to How will you protest?")
 time.sleep(1)
 print()
+egg = typingInput("What's your name?:")
+
+if egg=="":
+  for i in range(50):
+    print("Oui Oui Baguette")
+    time.sleep(0.05)
+  typingPrint("Are you still here? Starting...")
+else:
+  typingPrint("You will be William, William.")
+  
 print("Clearing...")
 time.sleep(1)
+
 clearScreen()
 
 # Waking Up
@@ -65,6 +83,7 @@ elif choose1 == "y":
         choose1ca = typingPrint("Would you like to put the clothes on(x) or wait(y)\n > ")
         if choose1ca == "x":
           typingPrint("You rummage around and find a dusty suit that looks nice.")
+          time.sleep(2)
           clearScreen()
           time.sleep(1)
           print("RING!")
@@ -83,6 +102,7 @@ elif choose1 == "y":
         
         elif choose1ca=="y":
           typingPrint("You wait, realizing that you slept with your work clothes on.\nLast night you overworked a bit, thanks to your unfair boss.")
+          time.sleep(2)
           clearScreen()
           time.sleep(1)
           print("RING!")
@@ -97,6 +117,7 @@ elif choose1 == "y":
           typingPrint("'Hello? Who is this?' \n- 'Hey, it's cousin Jim! :D Are you coming to the march!:D :D :D? \n- 'uh, yeah. Coming over right after work.'")
           typingPrint("You quickly dress up with a random suit you find in the closet and run out of the door, worried you would be late to work again.")
           typingPrint("\n\n\n")
+          time.sleep(2)
           clearScreen()
           #end
     elif choose1aa=="y":
@@ -121,9 +142,10 @@ elif choose1 == "y":
     if choose1c=="x":
       typingPrint("You look into the closet. It creaks open...")
       typingPrint("There are some work clothes inside. ")
-      choose1ca = typingPrint("Would you like to put the clothes on(x) or wait(y)\n > ")
+      choose1ca = typingInput("Would you like to put the clothes on(x) or wait(y)\n > ")
       if choose1ca == "x":
         typingPrint("You rummage around and find a dusty suit that looks nice.")
+        time.sleep(2)
         clearScreen()
         time.sleep(1)
         print("RING!")
@@ -142,6 +164,7 @@ elif choose1 == "y":
         
       elif choose1ca=="y":
         typingPrint("You wait, realizing that you slept with your work clothes on.\nLast night you overworked a bit, thanks to your unfair boss.")
+        time.sleep(2)
         clearScreen()
         time.sleep(1)
         print("RING!")
@@ -156,6 +179,7 @@ elif choose1 == "y":
         typingPrint("'Hello? Who is this?' \n- 'Hey, it's cousin Jim! :D Are you coming to the march!:D :D :D? \n- 'uh, yeah. Coming over right after work.'")
         typingPrint("You quickly dress up with a random suit you find in the closet and run out of the door, worried you would be late to work again.")
         typingPrint("\n\n\n")
+        time.sleep(2)
         clearScreen()
         #end
     elif choose1c == "y":
@@ -177,6 +201,7 @@ elif choose1 == "y":
             choose1ca = typingPrint("Would you like to put the clothes on(x) or wait(y)\n > ")
             if choose1ca == "x":
               typingPrint("You rummage around and find a dusty suit that looks nice.")
+              time.sleep(2)
               clearScreen()
               time.sleep(1)
               print("RING!")
@@ -195,6 +220,7 @@ elif choose1 == "y":
             
         elif choose1ca=="y":
           typingPrint("You wait, realizing that you slept with your work clothes on.\nLast night you overworked a bit, thanks to your unfair boss.")
+          time.sleep(2)
           clearScreen()
           time.sleep(1)
           print("RING!")
@@ -209,6 +235,7 @@ elif choose1 == "y":
           typingPrint("'Hello? Who is this?' \n- 'Hey, it's cousin Jim! :D Are you coming to the march!:D :D :D? \n- 'uh, yeah. Coming over right after work.'")
           typingPrint("You quickly dress up with a random suit you find in the closet and run out of the door, worried you would be late to work again.")
           typingPrint("\n\n\n")
+          time.sleep(2)
           clearScreen()
           #end
     elif choose1aa=="y":
@@ -231,9 +258,86 @@ elif choose1 == "y":
 '''
 █▀ █▀▀ █▀▀ █▄░█ █▀▀   ▀█ ▀   █░█░█ █▀█ █▀█ █▄▀
 ▄█ █▄▄ ██▄ █░▀█ ██▄   █▄ ▄   ▀▄▀▄▀ █▄█ █▀▄ █░█
+
+Mainly just conversation
 '''
 
 clearScreen()
+typingPrint("SCENE 2: Work\n\n\n")
 typingPrint("You make your way to your job, a construction worker working on the minimum wage of $1.15 an hour.")
 typingPrint("As you enter the site, you see your friends and co-workers already getting ready, and your work pal, Michael comes up to you.")
-typingPrint("M: Yo Johnson, come help me with the load,")
+typingPrint("M: Yo Johnson, come help me with the new load of concrete!")
+typingPrint("J(you): Coming, wait up a second.")
+time.sleep(2)
+clearScreen()
+
+typingPrint("You hop over to Michael with a wheelbarrow, and he starts loading bags.")
+typingPrint("\nM: You going to the march tonight?")
+typingPrint("J: Of course, I wouldn't miss a chance to get out of the royal shaft(To be unfairly treated or put-off)")
+typingPrint("M: All that everyone's talking about is the march. They're saying it'll be huge.")
+typingPrint("\n\nYou wheelbarrow the concrete bags from the truck, and spot your discriminative boss.")
+time.sleep(2)
+clearScreen()
+
+typingPrint("B(oss): Get to work! If you'r not working, get to it! >:o")
+typingPrint("The boss assigns black workers to the harder jobs and white workers to easier jobs.")
+typingPrint("Just the thought of social communication with him makes you sick. :(")
+time.sleep(2)
+clearScreen()
+
+
+'''
+░██████╗░█████╗░███████╗███╗░░██╗███████╗  ██████╗░██╗  ███╗░░░███╗░█████╗░██████╗░░█████╗░██╗░░██╗
+██╔════╝██╔══██╗██╔════╝████╗░██║██╔════╝  ╚════██╗╚═╝  ████╗░████║██╔══██╗██╔══██╗██╔══██╗██║░░██║
+╚█████╗░██║░░╚═╝█████╗░░██╔██╗██║█████╗░░  ░█████╔╝░░░  ██╔████╔██║███████║██████╔╝██║░░╚═╝███████║
+░╚═══██╗██║░░██╗██╔══╝░░██║╚████║██╔══╝░░  ░╚═══██╗░░░  ██║╚██╔╝██║██╔══██║██╔══██╗██║░░██╗██╔══██║
+██████╔╝╚█████╔╝███████╗██║░╚███║███████╗  ██████╔╝██╗  ██║░╚═╝░██║██║░░██║██║░░██║╚█████╔╝██║░░██║
+╚═════╝░░╚════╝░╚══════╝╚═╝░░╚══╝╚══════╝  ╚═════╝░╚═╝  ╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝
+'''
+
+typingPrint("SCENE 3: The March\n\n")
+
+typingPrint("You arrive to the protest march. There are already many people gathered there.")
+typingPrint("Just as you get there, the march begins. People are holding up signs.")
+choosec = typingInput("\nYou can go to the front(x) or the back(x) of the march > ")
+if choosec=="x":
+  typingPrint("You run over to the back, where a couple people are handing out posters.")
+  typingPrint("You grab one quickly and start following the people in front of you.")
+  typingPrint("Suddenly, one firefighters with a hose\nstarts blasting you and your fellow friends.")
+  chooseca = typingInput("Do you want to: Fight them(x) or run away(y)")
+  if chooseca == "x":
+    typingPrint("NO. YOU DO NOT ATTACK BC THIS IS A PEACEFUL PROTEST")
+    typingPrint("Moving on...")
+  elif chooseca=="y":
+    typingPrint("Good job! :DDDDDD You just run, because this is peaceful.")
+elif choosec=="y":
+  typingPrint("You run over to the front, where a couple people are handing out posters.")
+  typingPrint("You grab one quickly and start following the people in front of you.")
+  typingPrint("Suddenly, one firefighters with a hose\nstarts blasting you and your fellow friends.")
+  chooseca = typingInput("Do you want to: Fight them(x) or run away(y)")
+  if chooseca == "x":
+    typingPrint("NO. YOU DO NOT ATTACK BC THIS IS A PEACEFUL PROTEST")
+    typingPrint("Moving on...")
+  elif chooseca=="y":
+    typingPrint("Good job! :DDDDDD You just run, because this is peaceful.")
+typingPrint("Good job. You are good.")
+
+typingPrint("After the march, a few of your friends invite you to the diner as a celebration.")
+typingPrint("At the diner, you find a few other people talking about\nthe upcoming diner sit-in that is happening.")
+geez = typingInput("Would you like to join?(y/n) > ")
+if geez == "y":
+  typingPrint("You decide to participate, like the patriotic man you are.")
+else:
+  typingPrint("You go anyway >:)")
+time.sleep(2)
+clearScreen()
+
+'''
+  _________                               _____         _________.__  __    .__        
+ /   _____/ ____  ____   ____   ____     /  |  |  /\   /   _____/|__|/  |_  |__| ____  
+ \_____  \_/ ___\/ __ \ /    \_/ __ \   /   |  |_ \/   \_____  \ |  \   __\ |  |/    \ 
+ /        \  \__\  ___/|   |  \  ___/  /    ^   / /\   /        \|  ||  |   |  |   |  \
+/_______  /\___  >___  >___|  /\___  > \____   |  \/  /_______  /|__||__|   |__|___|  /
+        \/     \/    \/     \/     \/       |__|              \/                    \/ 
+'''
+
