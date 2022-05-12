@@ -340,3 +340,8 @@ clearScreen()
 /_______  /\___  >___  >___|  /\___  > \____   |  \/  /_______  /|__||__|   |__|___|  /
         \/     \/    \/     \/     \/       |__|              \/                    \/ 
 '''
+
+typingPrint("You arrive at the diner, anticipation lingering around.")
+typingPrint("You sit down, nervous of who would interrupt.\n")
+typingPrint("After a while of sitting around and recieving weird looks,")
+typingPrint("a man finally ")
