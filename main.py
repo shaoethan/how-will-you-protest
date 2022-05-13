@@ -344,4 +344,50 @@ clearScreen()
 typingPrint("You arrive at the diner, anticipation lingering around.")
 typingPrint("You sit down, nervous of who would interrupt.\n")
 typingPrint("After a while of sitting around and recieving weird looks,")
-typingPrint("a man finally ")
+typingPrint("a man finally storms up to you and your friends,")
+typingPrint("and demands you to leave.")
+choosed= typingInput("\n Would you like to leave the seat(x) or stay(y) >")
+if choosed == "x":
+  typingPrint("Nice! You get off the chair. It is good to not argue with them.")
+elif choosed == "y":
+  typingPrint("No, you should not argue with people, it will only cause violence.")
+typingPrint("A few weeks after the protest, you get mail. It reads,")
+typingPrint("\nCongrats! Our protesting has made it's way around the south!")
+typingPrint("Here's a quick celebration:")
+start=5
+
+for counter in range(start,0,-1):
+    print(counter)
+    time.sleep(1)
+    os.system('clear')  
+
+print("v^v^v^v^v^v^v^v^v^v^v^v^v^v^v")
+print("<                           >")
+print("<   The Protesting worked!  >")
+print("<                           >")
+print("v^v^v^v^v^v^v^v^v^v^v^v^v^v^v")
+
+
+'''
+█▀ █▀▀ █▀▀ █▄░█ █▀▀   █▀ ▀   █▄█ ▄▀█ █▄█ █ █
+▄█ █▄▄ ██▄ █░▀█ ██▄   ▄█ ▄   ░█░ █▀█ ░█░ ▄ ▄
+'''
+
+
+clearScreen()
+typingPrint("Several months later...")
+typingPrint("President Lyndon Johnson signs the Voting Acts Right, enabling black citizens like 'you' to vote!")
+typingPrint("When playing this game, you would be able to see how black citizens in 1960s did to protest the laws states\nimplemented to prevent them from voting.")
+typingPrint("Time for another celebration!")
+start=5
+
+for counter in range(start,0,-1):
+    print(counter)
+    time.sleep(1)
+    os.system('clear')  
+
+print("v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^")
+print("<                            >")
+print("< YAY FOR NO DISCRIMINATION! >")
+print("<                            >")
+print("v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^")
