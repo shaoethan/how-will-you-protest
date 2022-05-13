@@ -1,10 +1,12 @@
+#<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@TheOceanFace/Voting-Acts-Right-RPG?embed=true"></iframe>
+
 import time,os,sys
 
 def typingPrint(text):
   for character in text:
     sys.stdout.write(character)
     sys.stdout.flush()
-    time.sleep(0.07)
+    time.sleep(0.04)
   print()
   
 def typingInput(text):
@@ -17,6 +19,7 @@ def typingInput(text):
   
 def clearScreen():
   typingPrint("Clear screen...")
+  time.sleep(2)
   os.system("clear")
 
 '''
@@ -51,7 +54,6 @@ if egg=="":
 else:
   typingPrint("You will be William, William.")
   
-print("Clearing...")
 time.sleep(1)
 
 clearScreen()
@@ -70,7 +72,7 @@ elif choose1 == "y":
     typingPrint("The letter writes:")
     time.sleep(1)
     print()
-    typingPrint("From Uncle Johnson    To William Johnson   1/3/1965\n\n\n")
+    typingPrint("From Uncle Johnson    To William Johnson   1/3/1963\n\n\n")
     typingPrint("You should join the protest :)))) XD")
     typingPrint("\n\nFrom, Uncle Johnson")
     choose1aa = typingInput("Would you like to look around the room(x) or wait(y) >")
@@ -258,7 +260,6 @@ elif choose1 == "y":
 '''
 █▀ █▀▀ █▀▀ █▄░█ █▀▀   ▀█ ▀   █░█░█ █▀█ █▀█ █▄▀
 ▄█ █▄▄ ██▄ █░▀█ ██▄   █▄ ▄   ▀▄▀▄▀ █▄█ █▀▄ █░█
-
 Mainly just conversation
 '''
 
@@ -299,8 +300,8 @@ typingPrint("SCENE 3: The March\n\n")
 
 typingPrint("You arrive to the protest march. There are already many people gathered there.")
 typingPrint("Just as you get there, the march begins. People are holding up signs.")
-choosec = typingInput("\nYou can go to the front(x) or the back(x) of the march > ")
-if choosec=="x":
+choosec = typingInput("You can go to the front(x) or the back(x) of the march > ")
+if choosec=="y":
   typingPrint("You run over to the back, where a couple people are handing out posters.")
   typingPrint("You grab one quickly and start following the people in front of you.")
   typingPrint("Suddenly, one firefighters with a hose\nstarts blasting you and your fellow friends.")
@@ -310,7 +311,7 @@ if choosec=="x":
     typingPrint("Moving on...")
   elif chooseca=="y":
     typingPrint("Good job! :DDDDDD You just run, because this is peaceful.")
-elif choosec=="y":
+elif choosec=="x":
   typingPrint("You run over to the front, where a couple people are handing out posters.")
   typingPrint("You grab one quickly and start following the people in front of you.")
   typingPrint("Suddenly, one firefighters with a hose\nstarts blasting you and your fellow friends.")
@@ -359,7 +360,6 @@ start=5
 for counter in range(start,0,-1):
     print(counter)
     time.sleep(1)
-    os.system('clear')  
 
 print("v^v^v^v^v^v^v^v^v^v^v^v^v^v^v")
 print("<                           >")
